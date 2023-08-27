@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workshet</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+  <h1> SignUp form</h1>
+    
+          <form action="index.html" method="get">
+            <label for="name">Full Name</label>
+            <br>
+            <input type="text" id="name"  name="name">
+            <br>
+            
+            
+            
+            <label for="name">Enter Email</label>
+            <br>
+            <input type="email" id="email name="email" required>
+            <br>
+            
+            <label for="name">Password</label>
+            <br>
+            <input type="password" id="password" name="password"/>
+            <br>
+            
+            
+            <label for="name">Confirm password</label>
+            <br>
+            <input type="password" id="cpassword" name="cpassword" required/>
+            <br>
+            
+            
+            
+            <label for="name">Age</label>
+            <br>
+              <input type="number" id="age" name="number" required/>
+              <br>
+            
+            
+              <input type="submit" value="Submit" onclick="submitForm()"/>
+              <p id="message"></p>
+
+            
+          </form>
+        
+          <!-- javascript  -->
+          <script>
+              
+              const submitForm= ()=>{
+                const messageTag= document.getElementById(message)
+                const passwordLen = document.getElementById(password)
+
+                if(!length(passwordLen) > 6){
+                    messageTag.innerHT="Password length must be greater than 6 letters"
+                }
+            }
+          </script>
+
+    
+</body>
+</html>
